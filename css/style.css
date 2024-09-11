@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 5000px;
+}
+
+:root {
+    --primary: #0D7C66;
+    --green-dark: #09614f;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+
+.header .nav-logo h1{
+    font-family: 'Great Vibes',sans-serif;
+    font-size: 30px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.header .nav-links ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header .nav-links ul li {
+    list-style-type: none;
+}
+
+.header .nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.header .nav-links ul li a:hover {
+    color: var(--primary);
+    transition: all 0.3s;
+}
+
+.header .btn-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header .btn-nav .btn-register a{
+    color: var(--primary);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.header .btn-nav .btn-register a:hover {
+    background-color: var(--primary);
+    color: white;
+    transition: all 0.5s;
+}
+
+.header .btn-nav .btn-login {
+    background-color: var(--primary);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.header .btn-nav .btn-login:hover {
+    background-color: var(--green-dark);
+    transition: all 0.3s;
+}
+
+.header .btn-nav .btn-login a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.header .hero-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 30px 30px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header .hero-section .text-box h2 {
+    font-size:32px;
+}
+
+.header .hero-section .text-box span {
+    color: var(--primary);
+}
+
+.header .hero-section .text-box p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+.header .hero-section .img-hero img {
+    width: 600px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.header .hero-section .btn-start {
+    margin-top: 20px;
+    background-color: var(--primary);
+    width: fit-content;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+.header .hero-section .btn-start:hover {
+    background-color: var(--green-dark);
+    transition: all 0.5s;
+}
+
+.header .hero-section .btn-start a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header .hero-section .img-hero-depan img{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    right: 25%;
+    bottom: -20%;
+    border: 10px solid white;
+}
+
