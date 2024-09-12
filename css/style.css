@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 :root {
     --primary: #0D7C66;
     --green-dark: #09614f;
+    
 }
 
 .header {
@@ -27,9 +29,9 @@ body {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.7);
     padding: 15px 30px;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 99;
 }
 
 
@@ -40,9 +42,15 @@ body {
     cursor: pointer;
 }
 
+.header .nav-links {
+    display: flex;
+    align-items: center;
+}
+
 .header .nav-links ul {
     display: flex;
     gap: 30px;
+    margin-right: 20px;
 }
 
 .header .nav-links ul li {
@@ -51,12 +59,12 @@ body {
 
 .header .nav-links ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--primary);
     font-weight: 600;
 }
 
 .header .nav-links ul li a:hover {
-    color: var(--primary);
+    color: var(--green-dark);
     transition: all 0.3s;
 }
 
@@ -71,6 +79,7 @@ body {
     text-decoration: none;
     padding: 8px 15px;
     border-radius: 5px;
+    font-weight: 600;
 }
 
 .header .btn-nav .btn-register a:hover {
@@ -100,14 +109,14 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10%;
     padding: 30px 30px;
     justify-content: space-between;
     position: relative;
 }
 
 .header .hero-section .text-box h2 {
-    font-size:32px;
+    font-size:30px;
 }
 
 .header .hero-section .text-box span {
@@ -121,10 +130,14 @@ body {
 }
 
 
+.header .hero-section .img-hero {
+    margin-left: 60px;
+}
+
 .header .hero-section .img-hero img {
     width: 600px;
     height: auto;
-    margin-left: 50px;
+    border-radius: 8px;
 }
 
 .header .hero-section .btn-start {
@@ -151,8 +164,87 @@ body {
     position: absolute;
     width: 400px;
     height: 300px;
+    border-radius: 8px;
     right: 25%;
     bottom: -20%;
     border: 10px solid white;
 }
+
+
+/* Fasilitas */
+
+.fasilitas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12%;
+}
+
+.fasilitas .fasilitas-title h2 {
+    font-size: 35px;
+}
+
+.fasilitas .fasilitas-title span {
+    color: var(--primary);
+}
+
+.fasilitas .fasilitas-content  {
+    width: 1200px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+
+.fasilitas .fasilitas-content  .fasilitas-col {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 20%;
+    height: 190px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.fasilitas .fasilitas-content  .fasilitas-col:hover {
+    transform: scale(1.03);
+}
+
+.fasilitas .fasilitas-deskripsi-title p {
+    font-weight: 600;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.fasilitas .fasilitas-content .fasilitas-col .fasilitas-img img {
+    width: 80px;
+    height: 80px;
+    border: 1px dashed var(--primary);
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+
+.fasilitas .fasilitas-content .fasilitas-col .fasilitas-deskripsi p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 20px;
+}
+
+
+
+
+
 

@@ -16,7 +16,7 @@
 <body>
     
     <!-- Header -->
-     <header class="header">
+     <header class="header" >
         <nav>
             <div class="nav-logo">
                 <h1>SantaiStay</h1>
@@ -24,23 +24,22 @@
 
             <div class="nav-links">
                 <ul>
-                    <li><a href="">Beranda</a></li>
-                    <li><a href="">Tentang</a></li>
-                    <li><a href="">Hotel</a></li>
-                    <li><a href="">Kontak</a></li>
-                </ul>
-            </div>
-            <div class="btn-nav">
-                <div class="btn-register">
-                    <a href="">Buat Akun</a>
-                </div>
-                <div class="btn-login">
-                    <a href="">Masuk</a>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#fasilitas">Fasilitas</a></li>
+                    <li><a href="#hotel">Hotel</a></li>
+                </ul> 
+                <div class="btn-nav">
+                    <div class="btn-register">
+                        <a href="">Buat Akun</a>
+                    </div>
+                    <div class="btn-login">
+                        <a href="">Masuk</a>
+                    </div>
                 </div>
             </div>
         </nav>
 
-        <div class="hero-section">
+        <div class="hero-section" id="beranda">
             <div class="text-box">
                 <h2>Temukan <span>kenyamanan</span> tanpa batas.</h2>
                 <p>Rasakan kemewahan dan kenyamanan di hotel bintang 5 kami. <br> Nikmati layanan terbaik dan fasilitas lengkap.</p>
@@ -60,9 +59,86 @@
     <!-- Header End-->
 
 
-    <!-- Tentang  -->
+    <!-- Fasilitas  -->
+     <section class="fasilitas" id="fasilitas">
+        <div class="fasilitas-title">
+            <h2>Fasilitas <span>Hotel</span></h2>
+        </div>
+        <div class="fasilitas-deskripsi-title">
+            <p>Lebih dari sekadar menginap, rasakan kenyamanan yang tak terlupakan dengan fasilitas lengkap kami.Mulai dari kolam renang yang menyegarkan, spa yang menenangkan, hingga kamar yang dirancang khusus untuk memberikan Anda istirahat terbaik.</p>
+        </div>
+        <div class="fasilitas-content">
+            <div class="fasilitas-col">
+                <div class="fasilitas-img">
+                    <img src="images/approximate-equals.svg" alt="">
+                </div>
+                <div class="fasilitas-deskripsi">
+                    <p>Spa</p>
+                </div>
+            </div>
+            
+            <div class="fasilitas-col">
+                <div class="fasilitas-img">
+                    <img src="images/barbell.svg" alt="">
+                </div>
+                <div class="fasilitas-deskripsi">
+                    <p>Gym</p>
+                </div>
+            </div>
+            
+            <div class="fasilitas-col">
+                <div class="fasilitas-img">
+                    <img src="images/swimming-pool.svg" alt="">
+                </div>
+                <div class="fasilitas-deskripsi">
+                    <p>Kolam Renang</p>
+                </div>
+            </div>
+            <div class="fasilitas-col">
+                <div class="fasilitas-img">
+                    <img src="images/fork-knife.svg" alt="">
+                </div>
+                <div class="fasilitas-deskripsi">
+                    <p>Restoran</p>
+                </div>
+            </div>
+            <div class="fasilitas-col">
+                <div class="fasilitas-img">
+                    <img src="images/wifi-high.svg" alt="">
+                </div>
+                <div class="fasilitas-deskripsi">
+                    <p>Internet</p>
+                </div>
+            </div>
+            <div class="fasilitas-col">
+                <div class="fasilitas-img">
+                    <img src="images/hair-dryer.svg" alt="">
+                </div>
+                <div class="fasilitas-deskripsi">
+                    <p>Salon</p>
+                </div>
+            </div>
+            <div class="fasilitas-col">
+                <div class="fasilitas-img">
+                    <img src="images/books.svg" alt="">
+                </div>
+                <div class="fasilitas-deskripsi">
+                    <p>Perpustakaan</p>
+                </div>
+            </div>
+            <div class="fasilitas-col">
+                <div class="fasilitas-img">
+                    <img src="images/lock-key.svg" alt="">
+                </div>
+                <div class="fasilitas-deskripsi">
+                    <p>Keamanan</p>
+                </div>
+            </div>
+            
+        </div>
+     </section>
      
-    <!-- Tentang End  -->
+    <!-- Fasilitas End  -->
 
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
