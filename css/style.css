@@ -13,12 +13,12 @@ body {
 :root {
     --primary: #0D7C66;
     --green-dark: #09614f;
+    --abu: #dddfe2;
     
 }
 
 .header {
     width: 100%;
-    height: 100vh;
 }
 
 .header nav {
@@ -63,6 +63,13 @@ body {
     font-weight: 600;
 }
 
+.header .hamburger-menu i {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    display: none;
+}
+
 .header .nav-links ul li a:hover {
     color: var(--green-dark);
     transition: all 0.3s;
@@ -70,7 +77,7 @@ body {
 
 .header .btn-nav {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -109,10 +116,16 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 8%;
     padding: 30px 30px;
-    justify-content: space-between;
     position: relative;
+}
+
+.header .hero-section .hero-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
 .header .hero-section .text-box h2 {
@@ -130,14 +143,12 @@ body {
 }
 
 
-.header .hero-section .img-hero {
-    margin-left: 60px;
-}
 
 .header .hero-section .img-hero img {
     width: 600px;
-    height: auto;
+    height: auto;   
     border-radius: 8px;
+    margin-left: 70px;
 }
 
 .header .hero-section .btn-start {
@@ -166,14 +177,14 @@ body {
     height: 300px;
     border-radius: 8px;
     right: 25%;
-    bottom: -20%;
+    bottom: -16%;
     border: 10px solid white;
 }
 
 
 /* Fasilitas */
 
-.fasilitas {
+.fasilitas, .kamar {
     width: 100%;
     display: flex;
     align-items: center;
@@ -181,11 +192,11 @@ body {
     margin-top: 12%;
 }
 
-.fasilitas .fasilitas-title h2 {
+.fasilitas .fasilitas-title h2 , .kamar .kamar-title h2{
     font-size: 35px;
 }
 
-.fasilitas .fasilitas-title span {
+.fasilitas .fasilitas-title span , .kamar .kamar-title span{
     color: var(--primary);
 }
 
@@ -196,7 +207,7 @@ body {
     justify-content: center;
     margin-top: 40px;
     gap: 25px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 
@@ -245,6 +256,239 @@ body {
 
 
 
+/* Kamar */
+.kamar .kamar-content {
+    width: 1200px;
+    max-width: 1200px;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.kamar .kamar-content .kamar-filter form{
+    display: flex;
+    gap: 20px;
+    width: 800px;
+    justify-content: center;
+}
+
+.kamar .kamar-content .kamar-filter input[type="checkbox"], 
+#dropdown-kasur,
+#dropdown-harga {
+    display: none;
+}
+
+.kamar .kamar-content .kamar-filter label {
+    width: 100%;
+    display: flex;
+    border: 1px solid var(--primary);
+    text-align: left;
+    padding: 8px 15px;
+    height: 60px;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.kamar .kamar-content .kamar-filter label::after {
+    content: '';
+    width: 8px;
+    aspect-ratio: 1/1;
+    display: inline-block;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 7%;
+}
+
+.kamar .kamar-content .kamar-filter #kasur:checked ~ #dropdown-kasur,
+.kamar .kamar-content .kamar-filter #harga:checked ~ #dropdown-harga {
+    display: block;
+    z-index: 10;
+    
+}
+
+#dropdown-kasur {
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.7);
+    width: 300px;
+    padding: 10px 15px;
+    position: absolute;
+    border-radius: 5px;
+    right: 51%;
+    margin-top: 80px;
+}
+
+#dropdown-harga {
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.7);
+    width: 300px;
+    padding: 10px 15px;
+    position: absolute;
+    border-radius: 5px;
+    right: 20.5%;
+    margin-top: 80px;
+}
 
 
 
+#dropdown-kasur ul li ,
+#dropdown-harga ul li{
+    list-style-type: none;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    border-bottom: 1px solid var(--abu);
+}
+
+#dropdown-kasur ul li a,
+#dropdown-harga ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+/* Media query */
+@media(max-width: 600px) {
+
+
+
+    .header nav {
+        padding: 15px 50px;
+    }
+
+    .header .nav-logo h1 {
+        font-size: 40px;
+    }
+
+    .header .nav-links ul  {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 30px 30px;
+        width: 250px;
+        right: 4%;
+        margin-top: 33%;
+        display: none;
+        background-color: var(--primary);
+        height: fit-content;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.7);
+        transition: display 0.4s;
+    }
+
+    .header .nav-links ul::after {
+        content: '';
+        position: absolute;
+        top: -8%;
+        right: 4%;
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+        border-bottom: 20px solid var(--primary);
+    }
+
+    .header .nav-links ul li a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .header .btn-nav {
+        padding: 8px 30px;
+    }
+
+    .header  .hamburger-menu i {
+        display: block;
+        font-size: 40px;
+        padding: 15px 20px;
+    }
+
+
+    .header .hero-section {
+        display: flex;
+        min-width: 1200px;
+        margin-top: 30%;
+        justify-content: center;
+    }
+
+    .header .hero-section .hero-content {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 900px;
+        align-items: start;
+        padding: 15px 15px;
+    }
+
+    .header .hero-section .text-box h2, .fasilitas .fasilitas-title h2 {
+        font-size: 45px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header .hero-section .text-box p, .fasilitas .fasilitas-deskripsi-title p {
+        font-size: 25px;
+    
+    }
+
+    
+
+    .header .hero-section .img-hero img {
+        width: 800px;
+        margin-left: 0;
+    }
+
+    .header .hero-section .img-hero-depan img {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        right: 5%;
+        bottom: 40%;
+    }
+
+    .fasilitas , .kamar{
+        display: flex;
+        flex-direction: column;
+        min-width: 1200px;
+        margin-top: 30%;
+    }
+
+    .fasilitas .fasilitas-content {
+        display: flex;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .fasilitas .fasilitas-content .fasilitas-col {
+        width: 250px;
+        min-height: 250px;
+    }
+
+    .fasilitas .fasilitas-content .fasilitas-col .fasilitas-img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .kamar .kamar-content .kamar-filter {
+        position: relative;
+    }
+
+    .kamar .kamar-content .kamar-filter label {
+        font-size: 25px;
+        height: 80px;
+        font-weight: 600;
+        
+    }
+
+    #dropdown-kasur {
+        left: 11%;
+        margin-top: 100px;
+    }
+
+    #dropdown-harga {
+        right: 0;
+        margin-top: 100px;
+    }
+    
+
+}

@@ -26,7 +26,7 @@
                 <ul>
                     <li><a href="#beranda">Beranda</a></li>
                     <li><a href="#fasilitas">Fasilitas</a></li>
-                    <li><a href="#hotel">Hotel</a></li>
+                    <li><a href="#kamar">Kamar</a></li>
                 </ul> 
                 <div class="btn-nav">
                     <div class="btn-register">
@@ -36,10 +36,14 @@
                         <a href="">Masuk</a>
                     </div>
                 </div>
+                <div class="hamburger-menu">
+                    <i class="ph ph-list" id="hamburger-menu"></i>
+                </div>
             </div>
         </nav>
 
         <div class="hero-section" id="beranda">
+            <div class="hero-content">
             <div class="text-box">
                 <h2>Temukan <span>kenyamanan</span> tanpa batas.</h2>
                 <p>Rasakan kemewahan dan kenyamanan di hotel bintang 5 kami. <br> Nikmati layanan terbaik dan fasilitas lengkap.</p>
@@ -55,6 +59,7 @@
                 <img src="images/hero-bg-2.jpg" alt="">
             </div>
         </div>
+    </div>
      </header>
     <!-- Header End-->
 
@@ -139,6 +144,46 @@
      </section>
      
     <!-- Fasilitas End  -->
+
+    <!-- Kamar -->
+     <section class="kamar" id="kamar">
+        <div class="kamar-title">
+            <h2>Jenis <span>Kamar</span></h2>
+        </div>
+        <div class="kamar-content">
+            <div class="kamar-filter">
+                    <form action="">
+                        <input type="checkbox" name="kasur" id="kasur">
+                        <label for="kasur">Jumlah Kasur</label>
+                        <input type="checkbox" name="harga" id="harga">
+                        <label for="harga">Harga</label>
+
+                        <!-- Dropdown kasur -->
+                         <div id="dropdown-kasur">
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="">1 Kamar</a></li>
+                                    <li><a href="">2 Kamar</a></li>
+                                    <li><a href="">3 Kamar</a></li>
+                                </ul>
+                            </div>
+                         </div>
+
+                         <!-- Dropdown Harga -->
+                         <div id="dropdown-harga">
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="">Rp. 0 - 350.000</a></li>
+                                    <li><a href="">Rp. 350.000 - 800.000</a></li>
+                                    <li><a href="">Rp. 800.000 - 1.500.000</a></li>
+                                </ul>
+                            </div>
+                         </div>
+                    </form>
+            </div>
+        </div>
+     </section>
+    <!-- Kamar End -->
 
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
