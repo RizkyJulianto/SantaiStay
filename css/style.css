@@ -260,9 +260,10 @@ body {
 .kamar .kamar-content {
     width: 1200px;
     max-width: 1200px;
-    justify-content: center;
+    align-items: center;
     display: flex;
     margin-top: 30px;
+    flex-direction: column;
 }
 
 .kamar .kamar-content .kamar-filter form{
@@ -289,6 +290,7 @@ body {
     border-radius: 5px;
     position: relative;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .kamar .kamar-content .kamar-filter label::after {
@@ -307,7 +309,6 @@ body {
 .kamar .kamar-content .kamar-filter #harga:checked ~ #dropdown-harga {
     display: block;
     z-index: 10;
-    
 }
 
 #dropdown-kasur {
@@ -346,6 +347,91 @@ body {
 #dropdown-harga ul li a{
     color: black;
     text-decoration: none;
+}
+
+
+#dropdown-harga ul li a:hover,
+#dropdown-kasur ul li a:hover {
+    color: var(--primary);
+}
+
+
+.kamar-content .kamar-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 25px;
+}
+
+.kamar-content .kamar-card .kamar-col {
+    height: 460px;
+    background-color: white;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.7);
+    flex-basis: 27%;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.kamar-content .kamar-col .kamar-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 220px;
+    border-radius: 5px;
+}
+
+.kamar-content .kamar-col .kamar-nama h5 {
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.kamar-content .kamar-col .kamar-spesifikasi {
+    width: 100%;
+    display: flex;
+    padding: 8px 15px;
+    gap: 15px;
+    font-weight: 300;
+}
+
+.kamar-content .kamar-col .kamar-spesifikasi .kamar-rating span {
+    background-color: var(--primary);
+    color: white;
+    padding: 3px 15px;
+    border-radius: 5px;
+}
+
+.kamar-content .kamar-col .kamar-spesifikasi .kamar-pembatas {
+    width: 2px;
+    height: 25px;
+    background-color: #dddfe2;
+
+} 
+
+
+
+.kamar-content .kamar-col .kamar-deskripsi p {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.kamar-content .kamar-col .pembatas hr {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.kamar-content .kamar-col .kamar-booking a {
+    padding: 8px 15px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.kamar-content .kamar-col .kamar-booking a:hover {
+    color: var(--green-dark);
+    transition: all 0.3s;
 }
 
 
