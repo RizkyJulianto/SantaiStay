@@ -477,7 +477,12 @@ body {
 
     .header .nav-links ul li a {
         color: white;
-        font-size: 20px;
+        font-size: 25px;
+    }
+
+    .header .btn-nav .btn-register a,
+    .header .btn-nav .btn-login a {
+        font-size: 22px;
     }
 
     .header .btn-nav {
@@ -575,6 +580,77 @@ body {
         right: 0;
         margin-top: 100px;
     }
+
+    .kamar-content .kamar-card  {
+        gap: 40px;
+    }
     
+
+    .kamar-content .kamar-card .kamar-col {
+        flex-basis: 40%;
+        height: 600px;
+    }
+
+    .kamar-content .kamar-col .kamar-nama h5 {
+        padding: 8px 15px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .kamar-content .kamar-col .kamar-spesifikasi {
+        width: 100%;
+        display: flex;
+        padding: 8px 15px;
+        gap: 15px;
+        font-weight: 300;
+    }
+    
+    .kamar-content .kamar-col .kamar-spesifikasi .kamar-rating span {
+        background-color: var(--primary);
+        color: white;
+        padding: 3px 15px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+
+    .kamar-content .kamar-col .kamar-spesifikasi .kamar-harga span , 
+    .kamar-content .kamar-col .kamar-spesifikasi .kamar-jumlah-kasur p
+    {
+        font-size: 20px;
+    }
+    
+    .kamar-content .kamar-col .kamar-spesifikasi .kamar-pembatas {
+        width: 2px;
+        height: 25px;
+        background-color: #dddfe2;
+    
+    } 
+    
+    
+    
+    .kamar-content .kamar-col .kamar-deskripsi p {
+        padding: 8px 15px;
+        font-size: 18.5px;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+    
+    .kamar-content .kamar-col .pembatas hr {
+        width: 92%;
+        margin: 10px auto;
+    }
+    
+    .kamar-content .kamar-col .kamar-booking a {
+        padding: 8px 15px;
+        text-decoration: none;
+        color: var(--primary);
+        font-size: 23px;
+        margin-top: 2px;
+        display: inline-block;
+    }
+
+    .kamar-content .kamar-col .kamar-img img {
+        min-height: 300px;
+    }
 
 }
