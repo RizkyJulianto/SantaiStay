@@ -17,6 +17,19 @@ body {
     
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+}
+
 .header {
     width: 100%;
 }
@@ -24,7 +37,6 @@ body {
 .header nav {
     display: flex;
     width: 100%;
-    justify-content: space-between;
     background-color: white;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.7);
     padding: 15px 30px;
@@ -45,12 +57,13 @@ body {
 .header .nav-links {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 74%;
 }
 
 .header .nav-links ul {
     display: flex;
     gap: 30px;
-    margin-right: 20px;
 }
 
 .header .nav-links ul li {
@@ -441,14 +454,14 @@ body {
 @media(max-width: 600px) {
 
 
-
-    .header nav {
-        padding: 15px 50px;
-    }
-
     .header .nav-logo h1 {
         font-size: 40px;
     }
+
+    .header .nav-links {
+        width: 50%;
+    }
+    
 
     .header .nav-links ul  {
         display: flex;
@@ -456,8 +469,8 @@ body {
         position: absolute;
         padding: 30px 30px;
         width: 250px;
-        right: 4%;
-        margin-top: 33%;
+        right: 3.5%;
+        margin-top: 41%;
         display: none;
         background-color: var(--primary);
         height: fit-content;
@@ -468,11 +481,11 @@ body {
     .header .nav-links ul::after {
         content: '';
         position: absolute;
-        top: -8%;
+        top: -6%;
         right: 4%;
-        border-right: 15px solid transparent;
-        border-left: 15px solid transparent;
-        border-bottom: 20px solid var(--primary);
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-bottom: 30px solid var(--primary);
     }
 
     .header .nav-links ul li a {

@@ -11,7 +11,11 @@
 
     <!-- Style CSS -->
      <link rel="stylesheet" href="css/style.css">
-    <title>SantaiStay</title>
+
+
+     <!-- Animate On Scroll  -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <title>SantaiStay</title>
 </head>
 <body>
     
@@ -27,18 +31,20 @@
                     <li><a href="#beranda">Beranda</a></li>
                     <li><a href="#fasilitas">Fasilitas</a></li>
                     <li><a href="#kamar">Kamar</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
                 </ul> 
-                <div class="btn-nav">
-                    <div class="btn-register">
-                        <a href="">Buat Akun</a>
-                    </div>
-                    <div class="btn-login">
-                        <a href="">Masuk</a>
-                    </div>
+            </div>
+            <div class="btn-nav">
+                <div class="btn-register">
+                    <a href="">Buat Akun</a>
                 </div>
-                <div class="hamburger-menu">
-                    <i class="ph ph-list" id="hamburger-menu"></i>
+                <div class="btn-login">
+                    <a href="">Masuk</a>
                 </div>
+            </div>
+            <div class="hamburger-menu">
+                <i class="ph ph-list" id="hamburger-menu"></i>
             </div>
         </nav>
 
@@ -376,5 +382,10 @@
 
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+  AOS.init();
+</script>
 </body>
 </html>
