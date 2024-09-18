@@ -10,9 +10,10 @@ hamburgerMenu.addEventListener('click', function() {
     }
 });
 
-// Membatasi paragraf pada kamar-deskripsi 
+// Membatasi paragraf pada kamar-deskripsi & card-ulasan
 
 const paragraf = document.querySelectorAll('.kamar-deskripsi p');
+const paragrafUlasan = document.querySelectorAll('.swiper-content-ulasan p');
 
 // Mmebuat fungsi untuk memotong teks
 function potongTeks(elemen, batasKarakter) {
@@ -29,4 +30,8 @@ function potongTeks(elemen, batasKarakter) {
 //Lakukan ke semua paragraf yang belum dipotong 
 paragraf.forEach(paragraf => {
     potongTeks(paragraf, 100);
+});
+
+paragrafUlasan.forEach(paragrafUlasan => {
+  potongTeks(paragrafUlasan, 125);
 });

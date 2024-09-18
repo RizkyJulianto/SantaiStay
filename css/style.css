@@ -59,6 +59,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 74%;
+    padding-left: 3rem;
 }
 
 .header .nav-links ul {
@@ -197,7 +198,9 @@ body {
 
 /* Fasilitas */
 
-.fasilitas, .kamar {
+.fasilitas,
+ .kamar,
+ .review {
     width: 100%;
     display: flex;
     align-items: center;
@@ -205,11 +208,15 @@ body {
     margin-top: 12%;
 }
 
-.fasilitas .fasilitas-title h2 , .kamar .kamar-title h2{
+.fasilitas .fasilitas-title h2 , 
+.kamar .kamar-title h2,
+.review .review-title h2{
     font-size: 35px;
 }
 
-.fasilitas .fasilitas-title span , .kamar .kamar-title span{
+.fasilitas .fasilitas-title span , 
+.kamar .kamar-title span,
+.review .review-title span{
     color: var(--primary);
 }
 
@@ -448,6 +455,66 @@ body {
 }
 
 
+/* Review */
+.review .swiper {
+    width: 1200px;
+    display: flex;
+    margin-top: 10px;
+    height: 350px;
+}
+
+
+
+.review .swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+
+
+.review .swiper .swiper-wrapper .swiper-slide .swiper-content {
+    flex-basis: 42%;
+    height: 250px;
+    padding: 20px 30px;
+    margin-left: 15px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    cursor: pointer;   
+}
+
+
+
+.review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-card-header {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 300px;
+    height: fit-content;
+    align-items: center;
+}
+
+.review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-card-header img {
+    width: 80px;
+    height: 80px;
+}
+
+.review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-rating ul {
+    display: flex;
+    gap: 5px;
+}
+
+.review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-rating ul li {
+    list-style-type: none;
+}
+
+.review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-ulasan {
+    padding: 10px 15px;
+    margin-top: 8px;
+}
 
 
 /* Media query */
@@ -531,8 +598,7 @@ body {
     }
 
     .header .hero-section .text-box p, .fasilitas .fasilitas-deskripsi-title p {
-        font-size: 25px;
-    
+        font-size: 27px;
     }
 
     
@@ -550,7 +616,13 @@ body {
         bottom: 40%;
     }
 
-    .fasilitas , .kamar{
+    .header .hero-section .btn-start a {
+        font-size: 27px;
+    }
+
+    .fasilitas , 
+    .kamar,
+    .review{
         display: flex;
         flex-direction: column;
         min-width: 1200px;
@@ -601,7 +673,7 @@ body {
 
     .kamar-content .kamar-card .kamar-col {
         flex-basis: 40%;
-        height: 600px;
+        height: 620px;
     }
 
     .kamar-content .kamar-col .kamar-nama h5 {
@@ -623,13 +695,13 @@ body {
         color: white;
         padding: 3px 15px;
         border-radius: 5px;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .kamar-content .kamar-col .kamar-spesifikasi .kamar-harga span , 
     .kamar-content .kamar-col .kamar-spesifikasi .kamar-jumlah-kasur p
     {
-        font-size: 20px;
+        font-size: 22px;
     }
     
     .kamar-content .kamar-col .kamar-spesifikasi .kamar-pembatas {
@@ -643,7 +715,7 @@ body {
     
     .kamar-content .kamar-col .kamar-deskripsi p {
         padding: 8px 15px;
-        font-size: 18.5px;
+        font-size: 22px;
         margin-top: 10px;
         font-weight: 400;
     }
@@ -666,4 +738,36 @@ body {
         min-height: 300px;
     }
 
+    .review .swiper  {
+        width: 1150px;
+        height: 410px;
+    }
+    .review .swiper .swiper-wrapper .swiper-slide .swiper-content {
+        flex-basis: 44%;
+        height: 330px;
+    }
+
+    .review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-card-header img {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-profile p {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-rating ul li{
+        font-size: 30px;
+    }
+
+    .review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-ulasan {
+        margin-bottom: 10px;
+    }
+
+    .review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-ulasan p {
+        font-size: 21px;
+    }
+
+    
 }
