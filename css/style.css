@@ -200,7 +200,8 @@ body {
 
 .fasilitas,
  .kamar,
- .review {
+ .review,
+ .kontak {
     width: 100%;
     display: flex;
     align-items: center;
@@ -210,13 +211,15 @@ body {
 
 .fasilitas .fasilitas-title h2 , 
 .kamar .kamar-title h2,
-.review .review-title h2{
+.review .review-title h2,
+.kontak .kontak-title h2{
     font-size: 35px;
 }
 
 .fasilitas .fasilitas-title span , 
 .kamar .kamar-title span,
-.review .review-title span{
+.review .review-title span,
+.kontak .kontak-title span{
     color: var(--primary);
 }
 
@@ -472,6 +475,14 @@ body {
     align-items: center;
 }
 
+.review .swiper .swiper-button-next,
+.review .swiper .swiper-button-prev {
+    color: var(--primary);
+}
+
+.review .swiper .swiper-pagination-bullet {
+   background-color: var(--primary);
+}
 
 
 
@@ -484,6 +495,12 @@ body {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     cursor: pointer;   
+    transition: all 0.3s;
+}
+
+.review .swiper .swiper-wrapper .swiper-slide .swiper-content:hover {
+    
+    border-bottom: 6px solid var(--primary);
 }
 
 
@@ -515,6 +532,80 @@ body {
     padding: 10px 15px;
     margin-top: 8px;
 }
+
+
+/* Kontak */
+.kontak .kontak-content {
+    display: flex;
+    width: 1100px;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px 30px;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.kontak .kontak-content .kontak-cs,
+.kontak .kontak-content .kontak-alamat {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.7);
+    flex-basis: 42%;
+    height: fit-content;
+    padding: 30px 15px;
+    align-items: center;
+}
+
+.kontak .kontak-content .kontak-cs .img-icon img,
+.kontak .kontak-content .kontak-alamat .img-icon img {
+    width: 80px;
+    height: 80px;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.kontak .kontak-content .kontak-cs-title {
+    margin-top: 14px;
+    padding: 8px 8px;
+}
+
+.kontak .kontak-content .kontak-cs-title h3 {
+    font-size: 20px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.kontak .kontak-content .kontak-cs-deskripsi p {
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    padding: 8px 15px;
+}
+
+.kontak .kontak-content .kontak-cs-cta {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.kontak .kontak-content .kontak-cs-cta .nomor-telepon a,
+.kontak .kontak-content .kontak-cs-cta .alamat-email a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.kontak .kontak-content .kontak-cs-cta .alamat-email i {
+    position: absolute;
+    left: 40%;
+    top: 18%;
+    font-size: 18px;
+}
+
 
 
 /* Media query */
@@ -769,5 +860,9 @@ body {
         font-size: 21px;
     }
 
-    
+    .review .swiper .swiper-button-prev,
+    .review .swiper .swiper-button-next
+     {
+        display: none;
+    }
 }
