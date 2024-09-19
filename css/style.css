@@ -538,73 +538,124 @@ body {
 .kontak .kontak-content {
     display: flex;
     width: 1100px;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
-    padding: 30px 30px;
+    padding: 20px 30px;
     align-items: center;
     border-radius: 5px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-.kontak .kontak-content .kontak-cs,
-.kontak .kontak-content .kontak-alamat {
+.kontak .kontak-content .kontak-label { 
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-basis: 30%;
+    gap: 20px;
+    flex: 1;
+    padding: 15px 30px;
+    align-items: center;
+    border-radius: 5px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.kontak .kontak-content .kontak-label .kontak-label-left img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid var(--primary);
+}
+
+.kontak .kontak-content .kontak-label .kontak-label-right-title span {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.kontak .kontak-content .kontak-label .kontak-label-right-alamat p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.kontak .kontak-content .kontak-card-cta {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px    ;
+}
+
+.kontak .kontak-content .kontak-card-cta .kontak-card-form {
+    background-color: white;
+    padding: 30px 30px;
+    flex-basis: 50%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.7);
+}
+
+.kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-card-form-title h2 {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-card-form-deskripsi p {
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form form {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.7);
-    flex-basis: 42%;
-    height: fit-content;
-    padding: 30px 15px;
-    align-items: center;
-}
-
-.kontak .kontak-content .kontak-cs .img-icon img,
-.kontak .kontak-content .kontak-alamat .img-icon img {
-    width: 80px;
-    height: 80px;
-    border: 3px solid var(--primary);
-    border-radius: 50%;
-    padding: 15px;
-}
-
-.kontak .kontak-content .kontak-cs-title {
-    margin-top: 14px;
-    padding: 8px 8px;
-}
-
-.kontak .kontak-content .kontak-cs-title h3 {
-    font-size: 20px;
-    color: var(--primary);
-    font-weight: 600;
-}
-
-.kontak .kontak-content .kontak-cs-deskripsi p {
-    font-size: 13px;
-    font-weight: 300;
-    text-align: center;
-    padding: 8px 15px;
-}
-
-.kontak .kontak-content .kontak-cs-cta {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-around;
+    flex-grow: 1;
     width: 100%;
-    align-items: center;
-    position: relative;
+    margin-top: 20px;
+    gap: 10px;
 }
 
-.kontak .kontak-content .kontak-cs-cta .nomor-telepon a,
-.kontak .kontak-content .kontak-cs-cta .alamat-email a {
+.kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form .form-col-dua {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form .form-col-dua #nama,
+.kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form .form-col-dua #email{
+    flex-basis: 50%;
+}
+
+.kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form input {
+    height: 60px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid var(--primary);
+    outline: none;
+}
+
+.kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form textarea {
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid var(--primary);
+    outline: none;
+}
+
+.kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form .btn-kirim a {
     text-decoration: none;
-    color: var(--primary);
-}
-
-.kontak .kontak-content .kontak-cs-cta .alamat-email i {
-    position: absolute;
-    left: 40%;
-    top: 18%;
+    background-color: var(--primary);
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding: 15px 15px;
+    border-radius: 5px;
     font-size: 18px;
 }
+
+
+
 
 
 
@@ -713,7 +764,8 @@ body {
 
     .fasilitas , 
     .kamar,
-    .review{
+    .review,
+    .kontak{
         display: flex;
         flex-direction: column;
         min-width: 1200px;
@@ -864,5 +916,12 @@ body {
     .review .swiper .swiper-button-next
      {
         display: none;
+    }
+
+    
+
+    .kontak .kontak-content .kontak-label {
+        flex-basis: 100%;
+        height: 200px;
     }
 }
