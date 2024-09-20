@@ -582,7 +582,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10px    ;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .kontak .kontak-content .kontak-card-cta .kontak-card-form {
@@ -659,7 +660,7 @@
     display: flex;
     padding: 60px 60px;
     margin-top: 12%;
-
+    gap: 20px;
 }
 
 .footer .footer-col {
@@ -703,7 +704,8 @@
 }
 
 .footer .footer-col .footer-alamat ul li:hover,
-.footer .footer-col .footer-sosialmedia img:hover {
+.footer .footer-col .footer-sosialmedia img:hover ,
+.footer .footer-col .footer-img img:hover{
     transition: all 0.3s;
     transform: scale(1.01);
 }
@@ -729,6 +731,7 @@
     object-fit: cover;
     border: 5px solid white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .footer .footer-col .footer-kerjasama-text p {
@@ -780,7 +783,7 @@
 
 
     .header .nav-logo h1 {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .header .nav-links {
@@ -795,19 +798,20 @@
         padding: 30px 30px;
         width: 250px;
         right: 3.5%;
-        margin-top: 41%;
+        margin-top: 45%;
         display: none;
         background-color: var(--primary);
         height: fit-content;
         box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.7);
         transition: display 0.4s;
+        border-radius: 5px;
     }
 
     .header .nav-links ul::after {
         content: '';
         position: absolute;
         top: -6%;
-        right: 4%;
+        right: 6%;
         border-right: 20px solid transparent;
         border-left: 20px solid transparent;
         border-bottom: 30px solid var(--primary);
@@ -815,21 +819,22 @@
 
     .header .nav-links ul li a {
         color: white;
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .header .btn-nav .btn-register a,
     .header .btn-nav .btn-login a {
-        font-size: 22px;
+        font-size: 30px;
     }
 
     .header .btn-nav {
-        padding: 8px 30px;
+        width: 500px;
+        padding: 8px 8px;
     }
 
     .header  .hamburger-menu i {
         display: block;
-        font-size: 40px;
+        font-size: 60px;
         padding: 15px 20px;
     }
 
@@ -844,25 +849,31 @@
     .header .hero-section .hero-content {
         display: flex;
         flex-direction: column-reverse;
-        width: 900px;
+        width: 1090px;
         align-items: start;
         padding: 15px 15px;
     }
 
-    .header .hero-section .text-box h2, .fasilitas .fasilitas-title h2 {
-        font-size: 45px;
+    .header .hero-section .text-box h2{
+        font-size: 55px;
         text-align: center;
         margin-top: 20px;
     }
 
-    .header .hero-section .text-box p, .fasilitas .fasilitas-deskripsi-title p {
-        font-size: 27px;
+    .header .hero-section .text-box p {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .fasilitas .fasilitas-deskripsi-title p {
+        font-size: 32px;
+        width: 1200px;
     }
 
     
 
     .header .hero-section .img-hero img {
-        width: 800px;
+        width: 990px;
         margin-left: 0;
     }
 
@@ -875,7 +886,7 @@
     }
 
     .header .hero-section .btn-start a {
-        font-size: 27px;
+        font-size: 35px;
     }
 
     .fasilitas , 
@@ -885,23 +896,35 @@
         display: flex;
         flex-direction: column;
         min-width: 1200px;
-        margin-top: 30%;
+        margin-top: 33%;
+    }
+
+    .kontak .kontak-title h2,
+    .review .review-title h2,
+    .kamar .kamar-title h2,
+    .fasilitas .fasilitas-title h2 {
+        font-size: 60px;
     }
 
     .fasilitas .fasilitas-content {
         display: flex;
         max-width: 100%;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .fasilitas .fasilitas-content .fasilitas-col {
-        width: 250px;
-        min-height: 250px;
+       flex-basis: 42%;
+       height: 250px;
     }
 
     .fasilitas .fasilitas-content .fasilitas-col .fasilitas-img img {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .fasilitas .fasilitas-content .fasilitas-col .fasilitas-deskripsi p {
+        font-size: 32px;
     }
 
     .kamar .kamar-content .kamar-filter {
@@ -909,7 +932,7 @@
     }
 
     .kamar .kamar-content .kamar-filter label {
-        font-size: 25px;
+        font-size: 27px;
         height: 80px;
         font-weight: 600;
         
@@ -923,7 +946,13 @@
     #dropdown-harga {
         right: 0;
         margin-top: 100px;
+        width: 380px;
     }
+
+    #dropdown-kasur ul li a,
+    #dropdown-harga ul li a{
+    font-size: 25px;
+}
 
     .kamar-content .kamar-card  {
         gap: 40px;
@@ -931,13 +960,13 @@
     
 
     .kamar-content .kamar-card .kamar-col {
-        flex-basis: 40%;
-        height: 620px;
+        flex-basis: 85%;
+        height: 730px;
     }
 
     .kamar-content .kamar-col .kamar-nama h5 {
         padding: 8px 15px;
-        font-size: 25px;
+        font-size: 35px;
         font-weight: 600;
     }
     
@@ -954,13 +983,13 @@
         color: white;
         padding: 3px 15px;
         border-radius: 5px;
-        font-size: 22px;
+        font-size: 25px;
     }
 
     .kamar-content .kamar-col .kamar-spesifikasi .kamar-harga span , 
     .kamar-content .kamar-col .kamar-spesifikasi .kamar-jumlah-kasur p
     {
-        font-size: 22px;
+        font-size: 25px;
     }
     
     .kamar-content .kamar-col .kamar-spesifikasi .kamar-pembatas {
@@ -974,13 +1003,13 @@
     
     .kamar-content .kamar-col .kamar-deskripsi p {
         padding: 8px 15px;
-        font-size: 22px;
+        font-size: 27px;
         margin-top: 10px;
         font-weight: 400;
     }
     
     .kamar-content .kamar-col .pembatas hr {
-        width: 92%;
+        width: 97%;
         margin: 10px auto;
     }
     
@@ -988,21 +1017,22 @@
         padding: 8px 15px;
         text-decoration: none;
         color: var(--primary);
-        font-size: 23px;
+        font-size: 30px;
         margin-top: 2px;
         display: inline-block;
     }
 
     .kamar-content .kamar-col .kamar-img img {
-        min-height: 300px;
+        min-height: 400px;
     }
 
     .review .swiper  {
         width: 1150px;
+        max-width: 1150px;
         height: 410px;
     }
     .review .swiper .swiper-wrapper .swiper-slide .swiper-content {
-        flex-basis: 44%;
+        flex-basis: 100%;
         height: 330px;
     }
 
@@ -1034,10 +1064,61 @@
         display: none;
     }
 
+  
     
+
 
     .kontak .kontak-content .kontak-label {
         flex-basis: 100%;
         height: 200px;
+        gap: 30px;
     }
+
+    .kontak .kontak-content .kontak-card-cta {
+        gap: 30px;
+    }
+
+    .kontak .kontak-content .kontak-card-cta iframe {
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+    }
+
+    .kontak .kontak-content .kontak-label .kontak-label-left img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .kontak .kontak-content .kontak-label .kontak-label-right-title span,
+    .kontak .kontak-content .kontak-label .kontak-label-right-alamat p
+     {
+        font-size: 35px;
+    }
+
+    .kontak .kontak-content .kontak-card-cta .kontak-card-form  {
+        flex-basis: 100%;
+    }
+
+    .kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-card-form-title h2 {
+        font-size: 40px;
+    }
+
+    .kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-card-form-deskripsi p {
+        font-size: 25px;
+    }
+
+    .kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form input {
+        height: 80px;
+        font-size: 22px;
+    }
+
+    .kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form textarea
+     {
+        font-size: 22px;
+    }
+
+    .kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form .btn-kirim a {
+        font-size: 25px;
+    }
+    
 }
