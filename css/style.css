@@ -1121,5 +1121,76 @@
     .kontak .kontak-content .kontak-card-cta .kontak-card-form .kontak-form .btn-kirim a {
         font-size: 25px;
     }
+
+    .footer {
+        width: 1200px;
+        padding: 80px 80px;
+        gap: 80px;
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-col {
+        flex-basis: 46%;
+    }
+
+    .footer .footer-col .footer-title h3  {
+        font-size: 50px;
+    }
+
+    .footer .footer-col .footer-alamat ul li {
+        font-size: 33px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .footer .footer-col .footer-alamat i {
+        padding-right: 20px;
+    }
+
+    .footer .footer-col .footer-sosialmedia img {
+        width: 70px;
+        height: 70px;
+        margin-top: 30px;
+        padding: 5px;
+    }
+
+    .footer .footer-col .footer-alamat ul li a::before {
+        width: 10px;
+    }
+
+
+    .footer .footer-col .footer-img img {
+        width: 180px;
+        height: 150px;
+    }
+
+    .footer .footer-col .footer-img img:nth-child(even) {
+        margin-left:15px;
+    }
+
+    .footer .footer-col .footer-img img:nth-child(3),
+    .footer .footer-col .footer-img img:nth-child(5)
+     {
+        margin-top: 15px;
+    }
+
+    .footer .footer-col .footer-kerjasama-text p {
+        font-size: 28px;
+    }
+
+    .footer .footer-col .footer-kerjasama-form form {
+        height: 120px;
+        width: fit-content;
+        margin-top: 30px;
+    }
+
+    .footer .footer-col .footer-kerjasama-form input {
+        font-size: 25px;
+    }
+
+    .footer .footer-col .footer-kerjasama-form .btn-kerjasama-submit a {
+        font-size: 28px;
+        padding: 20px 20px;
+    }
     
 }
