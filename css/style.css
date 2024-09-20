@@ -1029,16 +1029,17 @@
     .review .swiper  {
         width: 1150px;
         max-width: 1150px;
-        height: 410px;
+        height: 430px;
     }
+
     .review .swiper .swiper-wrapper .swiper-slide .swiper-content {
-        flex-basis: 100%;
-        height: 330px;
+        flex-basis: 45%;
+        height: 340px;
     }
 
     .review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-card-header img {
-        width: 110px;
-        height: 110px;
+        width: 115px;
+        height: 115px;
     }
     
     .review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-profile p {
@@ -1055,7 +1056,7 @@
     }
 
     .review .swiper .swiper-wrapper .swiper-slide .swiper-content .swiper-content-ulasan p {
-        font-size: 21px;
+        font-size: 22px;
     }
 
     .review .swiper .swiper-button-prev,
