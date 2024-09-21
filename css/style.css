@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    
+}
+
+body {
+    overflow-x: hidden;
 }
 
 
@@ -188,7 +193,7 @@
     width: 400px;
     height: 300px;
     border-radius: 8px;
-    right: 25%;
+    right: 40%;
     bottom: -16%;
     border: 10px solid white;
 }
@@ -881,8 +886,8 @@
         width: 400px;
         height: 400px;
         position: absolute;
-        right: 5%;
-        bottom: 40%;
+        right: -8%;
+        bottom: 20%;
     }
 
     .header .hero-section .btn-start a {
