@@ -32,6 +32,7 @@ paragraf.forEach(paragraf => {
     potongTeks(paragraf, 100);
 });
 
+// Perulangan Untuk paragraf bagian card ulasan
 paragrafUlasan.forEach(paragrafUlasan => {
   potongTeks(paragrafUlasan, 125);
 });

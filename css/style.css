@@ -785,8 +785,6 @@ body {
 
 /* Media query */
 @media(max-width: 600px) {
-
-
     .header .nav-logo h1 {
         font-size: 60px;
     }
