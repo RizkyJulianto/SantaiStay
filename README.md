@@ -9,7 +9,6 @@ Website ini hanya untuk tampilan desktop dan juga mobile saja
 
 ## Tech Stack
 
-**Client:** HTML, CSS, Javascript
+**User Interface:** HTML, CSS, Javascript
 
-**Server:** Mysql, PHP
 
