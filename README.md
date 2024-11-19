@@ -1,10 +1,10 @@
 
 # SantaiStay 🛏️
 
-Santaistay adalah proyek pribadi yang dibuat untuk belajar dan mempraktikkan kemampuan dalam pengembangan web. Website ini merupakan simulasi website booking hotel sederhana yang dibangun menggunakan HTML, CSS, JavaScript.Proyek ini bertujuan untuk memperkuat pemahaman tentang konsep-konsep dasar pengembangan web dan membangun aplikasi web yang fungsional.
+Santaistay is a personal project created to learn and practice skills in web development. This website is a simulation of a simple hotel booking website built using HTML, CSS, JavaScript. This project aims to strengthen the understanding of basic web development concepts and build a functional web application.
 
 # Tampilan Website
-Website ini hanya untuk tampilan desktop dan juga mobile saja
+This website is for desktop and mobile viewing only.
 
 
 ## Tech Stack
